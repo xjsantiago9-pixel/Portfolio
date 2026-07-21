@@ -1,0 +1,222 @@
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 3rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+header{
+    margin-top: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 2rem;
+    background-color: black;
+}
+
+section > h1,
+section > h2,
+section > h3 {
+    margin-top: 1.5rem;
+}
+
+section + section {
+    border-top: 1px solid #2ecc71;
+    padding-top: 3rem;
+    margin-top: 2rem;
+}
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+ }
+nav a{
+    font-size: clamp(1rem, 1.4vw, 1.4rem);
+    font-weight: 500;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: black;
+    padding: 0.3rem 0.6rem;
+}
+
+.pfp{
+    width: min(25rem, 70vw);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.img-border {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #029fe3;
+}
+
+nav a:hover, nav a.active {
+    color: hsl(195, 100%, 51%);
+    border-bottom: 2px solid #06e6ff;
+}
+
+.green {
+    color: #2ecc71;
+}
+.greenline {
+    color: #2ecc71;
+    border-bottom: 2px solid #2ecc71;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: min(1000px, 90vw);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    flex: 1 1 220px;
+    padding: 1rem;
+    border: 1px solid #2ecc71;
+    border-radius: 12px;
+    background-color: #111;
+    text-align: center;
+    height: fit-content;
+}
+
+.contacts {
+    width: 100%;
+    padding: 2rem 1rem 3rem;
+    text-align: center;
+    border-top: 1px solid #2ecc71;
+    margin-top: 2rem;
+}
+
+.contacts p {
+    color: #ccc;
+    margin-bottom: 0.8rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: white;
+    border: 1px solid #2ecc71;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+}
+
+.links a:hover {
+    background-color: #2ecc71;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.rsection {
+    width: auto;
+    height: auto;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume {
+    width: auto;
+    height: auto;
+    max-width: max-content;
+    text-align: left;
+    padding: 1.5rem;
+    margin: 1rem auto 0;
+    display: inline-block;
+    height: auto;
+    align-self: center;
+}
+
+.resume ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 5%;
+    }
+
+    nav {
+        gap: 0.6rem;
+    }
+
+    nav a {
+        font-size: clamp(0.9rem, 2.2vw, 1rem);
+        padding: 0.25rem 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.7rem 3%;
+    }
+
+    nav {
+        gap: 0.4rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.2rem 0.3rem;
+    }
+}
