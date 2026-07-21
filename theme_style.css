@@ -1,0 +1,151 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+/* ENTER CSS STYLE RULE BELOW THIS LINE */
+
+
+ body {
+     background-color: lightsteelblue;
+     color: #000000;
+     font-family: 'M PLUS Rounded 1c', sans-serif;
+     font-size: 14pt;
+     background-image: url("../images/bgstar.jpg");
+     background-size: cover;
+ }
+
+ h2, h3{
+    font-family: 'Sigmar One', cursive;
+ }
+
+header{
+    background-color: #1e293b;
+    color: white;
+    border-bottom: 30px #fcba03 solid;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content{
+    flex: 3;
+}
+
+section{
+    background: #E1F5FE;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #fcba03;
+}
+
+aside{
+    flex: 1;
+    background-color: #E1F5FE;
+    padding: 20px;
+    height: fit-content;
+    border: 10px double #fcba03;
+}
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 15px solid #fcba03;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+article img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img{
+    width: 240px;
+    height: 140px;
+}
+
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+ nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+ }
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.03s;
+    ;
+}
+nav a:hover {
+    color: #fcba03;
+    font-size: 16pt;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* DO NOT MODIFY THIS CODE BEYOND THIS LINE */
+/* Mobile menu (basic responsive behavior) */
+ .menu-toggle {
+     display: none;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+     .menu-toggle {
+         display: block;
+     }
+
+     nav {
+         display: none;
+         width: 100%;
+     }
+
+     nav ul {
+         flex-direction: column;
+         gap: 1rem;
+         padding: 1rem 0;
+     }
+
+     .navbar {
+         flex-wrap: wrap;
+     }
+
+     nav.active {
+         display: block;
+     }
+ }
